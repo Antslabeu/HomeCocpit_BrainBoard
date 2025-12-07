@@ -5,7 +5,7 @@
 	(uuid "34bda88b-d8fd-4ec8-84e5-47b089adb0f6")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -14,14 +14,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x02"
+			(property "Value" "Conn_01x03"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,9 +74,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_1_1"
+			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start -1.27 1.27)
+					(start -1.27 3.81)
 					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
@@ -84,6 +84,17 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(rectangle
@@ -109,7 +120,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -127,7 +138,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -137,6 +148,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4533,7 +4562,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 149.86) (xy 172.72 149.86)
+			(xy 170.18 144.78) (xy 172.72 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5173,6 +5202,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 149.86) (xy 170.18 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a60cbd43-0e34-4b67-acd0-3cf35f39af18")
+	)
+	(wire
+		(pts
 			(xy 215.9 38.1) (xy 218.44 38.1)
 		)
 		(stroke
@@ -5463,7 +5502,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 147.32) (xy 172.72 147.32)
+			(xy 170.18 142.24) (xy 172.72 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5831,6 +5870,16 @@
 		)
 		(uuid "f0912e73-38c7-4549-b58e-44e2f8d6c7fc")
 	)
+	(wire
+		(pts
+			(xy 170.18 147.32) (xy 172.72 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2871308-017c-4f28-9157-6d7948028582")
+	)
 	(polyline
 		(pts
 			(xy 139.7 60.96) (xy 139.7 154.94)
@@ -6092,7 +6141,7 @@
 		(uuid "3644a7b7-6177-4697-9c4a-fda5ac22ced5")
 	)
 	(label "CAN-"
-		(at 170.18 147.32 180)
+		(at 170.18 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6422,7 +6471,7 @@
 		(uuid "97d93a3c-1c58-4df9-93d1-14691e0d6a50")
 	)
 	(label "CAN+"
-		(at 170.18 149.86 180)
+		(at 170.18 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8204,7 +8253,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4d15bbf8-5d55-402c-9930-8a9f14f6a290")
 		(property "Reference" "#PWR019"
 			(at 160.02 140.97 0)
@@ -8216,7 +8264,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 139.7 0)
+			(at 160.02 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8257,6 +8305,71 @@
 			(project "BrainBoard"
 				(path "/34bda88b-d8fd-4ec8-84e5-47b089adb0f6"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 170.18 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d3ff959-22ad-4ac1-bc50-dc2678426e6f")
+		(property "Reference" "#PWR033"
+			(at 170.18 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8d2338b-0790-466b-8ccd-7d00a5618028")
+		)
+		(instances
+			(project "BrainBoard"
+				(path "/34bda88b-d8fd-4ec8-84e5-47b089adb0f6"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -8608,7 +8721,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "631f5beb-d740-4df5-a5d6-d0e96c4950fe")
 		(property "Reference" "#PWR017"
 			(at 147.32 140.97 0)
@@ -8620,7 +8732,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 139.7 0)
+			(at 147.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10172,6 +10284,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 177.8 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b76c784b-b212-4ba4-a123-ba07a04d4e8c")
+		(property "Reference" "J5"
+			(at 180.34 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CAN"
+			(at 180.34 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "38e0e01a-a150-4f81-8ade-a13fc5a4f5bc")
+		)
+		(pin "3"
+			(uuid "a530da79-9c76-4f1d-bbff-720729b8c8af")
+		)
+		(pin "1"
+			(uuid "70687420-0672-48db-96d2-bc80c967cff2")
+		)
+		(instances
+			(project ""
+				(path "/34bda88b-d8fd-4ec8-84e5-47b089adb0f6"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 241.3 99.06 180)
 		(unit 1)
@@ -11232,75 +11417,6 @@
 			(project "BrainBoard"
 				(path "/34bda88b-d8fd-4ec8-84e5-47b089adb0f6"
 					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 177.8 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e99aa331-4dcd-4442-bcee-ff959b456440")
-		(property "Reference" "J4"
-			(at 180.34 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CAN"
-			(at 180.34 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical"
-			(at 177.8 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 177.8 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbf6243a-5f1d-47eb-953f-445c8b57792a")
-		)
-		(pin "1"
-			(uuid "befbc24a-f2ce-4582-89ec-53023765e6bf")
-		)
-		(instances
-			(project "BrainBoard"
-				(path "/34bda88b-d8fd-4ec8-84e5-47b089adb0f6"
-					(reference "J4")
 					(unit 1)
 				)
 			)
